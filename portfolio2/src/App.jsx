@@ -4,6 +4,7 @@ import NavBar from "./Components/NavBar";
 import Projects from "./Components/Projects";
 import Experience from "./Components/Experience";
 import Contact from "./Components/Contact";
+import ContactPhone from "./Components/ContactPhone";
 // import Test from "./Components/Test";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Projects />
       <Experience />
       <Contact />
+      <ContactPhone />
       {/* <Test /> */}
     </div>
   )

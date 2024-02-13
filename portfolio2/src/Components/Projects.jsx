@@ -9,17 +9,19 @@ const Projects = () => {
       </div>
 
       {/* projects section */}
-      <div className="flex p-3 rounded-xl shadow-ternary shadow-2xl gap-10 w-full h-2/4 scrollbar-thin scrollbar-thumb-secondary scrollbar-track-primary overflow-y-auto overflow-x-scroll md:overflow-y-hidden md:w-1/3 md:h-3/5">
+      <div className="flex p-3 rounded-xl shadow-ternary shadow-2xl gap-10 w-full h-3/5 scrollbar-thin scrollbar-thumb-secondary scrollbar-track-primary overflow-y-auto overflow-x-scroll md:overflow-y-hidden md:w-1/3 md:h-3/5">
+
         <div className="w-full h-full flex-shrink-0 p-2 md:p-0 md:flex items-center justify-center">
-          <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-2 md:grid-rows-2 gap-7">
+          <div className="grid grid-cols-2 grid-rows-2 md:grid-cols-2 md:grid-rows-2 gap-3 md:gap-7">
             <div className="border flex justify-center items-center h-44 md:w-64 md:h-48 rounded-md md:hover:shadow-ternary shadow-xl duration-300">1</div>
             <div className="border flex justify-center items-center h-44 md:w-64 md:h-48 rounded-md md:hover:shadow-ternary shadow-xl duration-300">2</div>
             <div className="border flex justify-center items-center h-44 md:w-64 md:h-48 rounded-md md:hover:shadow-ternary shadow-xl duration-300">3</div>
             <div className="border flex justify-center items-center h-44 md:w-64 md:h-48 rounded-md md:hover:shadow-ternary shadow-xl duration-300">4</div>
           </div>
         </div>
+
         <div className="w-full h-full flex-shrink-0 p-2 md:p-0 md:flex items-center justify-center">
-          <div className="grid grid-cols-2 grid-rows-2 md:grid-cols-2 md:grid-rows-2 gap-7">
+          <div className="grid grid-cols-2 grid-rows-2 md:grid-cols-2 md:grid-rows-2 gap-3 md:gap-7">
             <div className="border flex justify-center items-center h-44 md:w-64 md:h-48 rounded-md md:hover:shadow-ternary shadow-xl duration-300">5</div>
             <div className="border flex justify-center items-center h-44 md:w-64 md:h-48 rounded-md md:hover:shadow-ternary shadow-xl duration-300">6</div>
             <div className="border flex justify-center items-center h-44 md:w-64 md:h-48 rounded-md md:hover:shadow-ternary shadow-xl duration-300">7</div>
