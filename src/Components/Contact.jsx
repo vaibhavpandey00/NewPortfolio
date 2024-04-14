@@ -12,33 +12,52 @@ const Contact = () => {
     <div name="contact" className="flex flex-col lg:flex-row w-full h-screen items-center justify-center snap-center bg-primary lg:gap-10">
 
       {/* Contact Form */}
-      <div className="h-4/5 w-full lg:w-1/3 lg:h-2/3 lg:mt-14 flex items-center justify-center">
-        <form className="flex flex-col w-[90%] p-3 lg:w-3/4 lg:p-6 h-full gap-5 bg-secondary rounded-3xl shadow-ternary shadow-2xl" action="">
-          <h1 className="text-3xl text-primary font-bold mt-3 lg:mt-5">Get In Touch</h1>
-          <input className="bg-ternary text-primary font-normal rounded-lg p-3" type="text" placeholder="Your Name" required />
-          <input className="bg-ternary text-primary font-normal rounded-lg p-3" type="text" placeholder="Email" required />
-          <textarea className="bg-ternary text-primary font-normal rounded-lg p-3" rows="10" placeholder="Your Message..." required />
-          <button className="bg-ternary text-primary font-normal rounded-lg p-3 hover:bg-primary hover:text-secondary">Send</button>
-        </form>
-      </div>
+
+      <form className="flex flex-col h-[68%] lg:h-[68%] w-[95%] p-3 lg:w-[25%] lg:p-6 gap-5 bg-secondary rounded-3xl shadow-ternary shadow-2xl" action="">
+        <h1 className="text-3xl text-primary font-bold mt-3 lg:mt-5">Get In Touch</h1>
+        <input className="bg-ternary text-primary font-normal rounded-lg p-3" type="text" name="name" placeholder="Your Name" required />
+        <input className="bg-ternary text-primary font-normal rounded-lg p-3" type="email" name="email" placeholder="Email" required />
+        <textarea className="bg-ternary text-primary font-normal rounded-lg p-3" rows="10" name="message" placeholder="Your Message..." required />
+        <button className="bg-ternary text-primary font-normal rounded-lg p-3 hover:bg-primary hover:text-secondary">Send</button>
+      </form>
 
       {/* contact section */}
       <div className="bg-primary hidden lg:flex items-center">
         <div className="flex flex-col">
           <div>
-            <a className="flex justify-start items-center text-xl lg:m-6 cursor-pointer rounded-full" href="mailto:vaibhav.pandey0798@gmail.com"><MdEmail className="text-4xl mr-2" /></a>
+            <a
+              data-aos="fade-up-right"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+              className="flex justify-start items-center text-xl lg:m-6 cursor-pointer rounded-full" href="mailto:vaibhav.pandey0798@gmail.com"><MdEmail className="text-4xl mr-2" /></a>
           </div>
           <div>
-            <a className="flex justify-start items-center text-xl lg:m-6 cursor-pointer rounded-full" href="http://www.linkedin.com/in/vaibhavpandey0" target="_blank"><IoLogoLinkedin className="text-4xl mr-2" /></a>
+            <a
+              data-aos="fade-up-right"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+              className="flex justify-start items-center text-xl lg:m-6 cursor-pointer rounded-full" href="http://www.linkedin.com/in/vaibhavpandey0" target="_blank"><IoLogoLinkedin className="text-4xl mr-2" /></a>
           </div>
           <div>
-            <a className="flex justify-start items-center text-xl lg:m-6 cursor-pointer rounded-full" href="https://www.github.com/vaibhavpandey00" target="_blank"><FaGithub className="text-4xl" /></a>
+            <a
+              data-aos="fade-up-right"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+              className="flex justify-start items-center text-xl lg:m-6 cursor-pointer rounded-full" href="https://www.github.com/vaibhavpandey00" target="_blank"><FaGithub className="text-4xl" /></a>
           </div>
           <div>
-            <a className="flex justify-start items-center text-xl lg:m-6 cursor-pointer rounded-full" href="https://www.instagram.com/vaibhavpandey0" target="_blank"><AiFillInstagram className="text-4xl mr-2" /></a>
+            <a
+              data-aos="fade-up-right"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+              className="flex justify-start items-center text-xl lg:m-6 cursor-pointer rounded-full" href="https://www.instagram.com/vaibhavpandey0" target="_blank"><AiFillInstagram className="text-4xl mr-2" /></a>
           </div>
           <div>
-            <a className="flex justify-start items-center text-xl lg:m-6 cursor-pointer rounded-full" href="http://wa.me/+917987148753?text=Hello,%20lets%20chat" target="_blank"><IoLogoWhatsapp className="text-4xl mr-2" /></a>
+            <a
+              data-aos="fade-up-right"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-sine"
+              className="flex justify-start items-center text-xl lg:m-6 cursor-pointer rounded-full" href="http://wa.me/+917987148753?text=Hello,%20lets%20chat" target="_blank"><IoLogoWhatsapp className="text-4xl mr-2" /></a>
           </div>
         </div>
       </div>
