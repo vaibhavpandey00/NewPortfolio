@@ -32,7 +32,7 @@ const Contact = () => {
             <a className="flex justify-start items-center text-xl lg:m-6 cursor-pointer rounded-full" href="http://www.linkedin.com/in/vaibhavpandey0" target="_blank"><IoLogoLinkedin className="text-4xl mr-2" /></a>
           </div>
           <div>
-            <a className="flex justify-start items-center text-xl lg:m-6 cursor-pointer rounded-full" href="https://www.instagram.com/vaibhavpandey0" target="_blank"><FaGithub className="text-4xl" /></a>
+            <a className="flex justify-start items-center text-xl lg:m-6 cursor-pointer rounded-full" href="https://www.github.com/vaibhavpandey00" target="_blank"><FaGithub className="text-4xl" /></a>
           </div>
           <div>
             <a className="flex justify-start items-center text-xl lg:m-6 cursor-pointer rounded-full" href="https://www.instagram.com/vaibhavpandey0" target="_blank"><AiFillInstagram className="text-4xl mr-2" /></a>
