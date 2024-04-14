@@ -1,13 +1,7 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { IoDocumentText } from "react-icons/io5";
-import Aos from 'aos'
-import "aos/dist/aos.css"
 
 const About = () => {
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, [])
-
   return (
     <div name="about" className="flex flex-col w-full h-screen items-start pt-[4rem] bg-secondary text-primary md:pt-0  md:flex-row md:justify-center md:items-center md:gap-5">
       <div className="flex flex-col gap-4 m-5 md:w-3/12">

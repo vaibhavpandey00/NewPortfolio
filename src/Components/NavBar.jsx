@@ -10,7 +10,7 @@ const NavBar = () => {
     const [nav, setNav] = useState(false);
 
     useEffect(() => {
-        Aos.init({ duration: 800 });
+        Aos.init({ duration: 1000 });
     }, [])
 
     return (

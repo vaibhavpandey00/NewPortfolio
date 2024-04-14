@@ -1,11 +1,6 @@
-import React, { useEffect } from 'react'
-import Aos from 'aos'
-import "aos/dist/aos.css"
+import React from 'react'
 
 const Projects = () => {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, [])
   return (
     <div name="project" className="flex flex-col items-start w-full h-screen pt-[4rem] bg-primary text-secondary  md:gap-10 md:flex-row md:justify-center md:items-center border">
       <div className="md:hidden m-5">

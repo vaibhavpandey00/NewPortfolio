@@ -1,11 +1,6 @@
-import React, { useEffect } from 'react'
-import Aos from 'aos'
-import "aos/dist/aos.css"
+import React from 'react'
 
 const Experience = () => {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, [])
   return (
     <div name="experience" className="flex flex-col p-5 justify-center md:gap-10 md:flex-row md:justify-start  md:items-center w-full h-screen bg-secondary text-primary">
       <div
