@@ -1,9 +1,7 @@
 import React from "react"
 import { MdEmail } from "react-icons/md";
-import { FaPhone } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { IoLogoLinkedin } from "react-icons/io5";
-import { FaFacebook } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
 import Lottie from "lottie-react";
 import contactAnimation from "../Assets/contactMee.json";
@@ -26,12 +24,20 @@ const Contact = () => {
       {/* contact section */}
       <div className="bg-primary hidden lg:flex items-center">
         <div className="flex flex-col">
-          <div><a className="flex justify-start items-center text-xl lg:m-6 cursor-pointer rounded-full" href="mailto:vaibhav.pandey0798@gmail.com"><MdEmail className="text-4xl mr-2" /></a></div>
-          <div><a className="flex justify-start items-center text-xl lg:m-6 cursor-pointer rounded-full" href="tel:+917987148753"><FaPhone className="text-4xl mr-2" /></a></div>
-          <div><a className="flex justify-start items-center text-xl lg:m-6 cursor-pointer rounded-full" href="http://wa.me/+917987148753?text=Hello,%20lets%20chat" target="_blank"><IoLogoWhatsapp className="text-4xl mr-2" /></a></div>
-          <div><a className="flex justify-start items-center text-xl lg:m-6 cursor-pointer rounded-full" href="http://www.linkedin.com/in/vaibhavpandey0" target="_blank"><IoLogoLinkedin className="text-4xl mr-2" /></a></div>
-          <div><a className="flex justify-start items-center text-xl lg:m-6 cursor-pointer rounded-full" href=""><FaFacebook className="text-4xl mr-2" /></a></div>
-          <div><a className="flex justify-start items-center text-xl lg:m-6 cursor-pointer rounded-full" href="https://www.instagram.com/vaibhavpandey0" target="_blank"><AiFillInstagram className="text-4xl mr-2" /></a></div>
+          <div>
+            <a className="flex justify-start items-center text-xl lg:m-6 cursor-pointer rounded-full" href="mailto:vaibhav.pandey0798@gmail.com"><MdEmail className="text-4xl mr-2" /></a>
+          </div>
+          <div>
+            <a className="flex justify-start items-center text-xl lg:m-6 cursor-pointer rounded-full" href="http://www.linkedin.com/in/vaibhavpandey0" target="_blank"><IoLogoLinkedin className="text-4xl mr-2" /></a>
+          </div>
+          
+          <div>
+            <a className="flex justify-start items-center text-xl lg:m-6 cursor-pointer rounded-full" href="http://wa.me/+917987148753?text=Hello,%20lets%20chat" target="_blank"><IoLogoWhatsapp className="text-4xl mr-2" /></a>
+          </div>
+          
+          <div>
+            <a className="flex justify-start items-center text-xl lg:m-6 cursor-pointer rounded-full" href="https://www.instagram.com/vaibhavpandey0" target="_blank"><AiFillInstagram className="text-4xl mr-2" /></a>
+          </div>
         </div>
       </div>
 
