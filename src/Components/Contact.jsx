@@ -13,7 +13,7 @@ const Contact = () => {
 
       {/* Contact Form */}
 
-      <form className="flex flex-col h-[68%] lg:h-[68%] w-[95%] p-3 lg:w-[25%] lg:p-6 gap-5 bg-secondary rounded-3xl shadow-ternary shadow-2xl" action="">
+      <form className="flex flex-col h-[68%] lg:h-[68%] w-[95%] p-3 lg:w-[25%] lg:p-6 gap-5 bg-secondary rounded-3xl shadow-ternary shadow-2xl" action="https://formspree.io/f/mzbnkogd" method="POST">
         <h1 className="text-3xl text-primary font-bold mt-3 lg:mt-5">Get In Touch</h1>
         <input className="bg-ternary text-primary font-normal rounded-lg p-3" type="text" name="name" placeholder="Your Name" required />
         <input className="bg-ternary text-primary font-normal rounded-lg p-3" type="email" name="email" placeholder="Email" required />
@@ -64,9 +64,9 @@ const Contact = () => {
 
       {/* SVG section */}
       <div
-      data-aos="fade"
-      data-aos-delay="400"
-      className="hidden lg:flex h-2/4">
+        data-aos="fade"
+        data-aos-delay="400"
+        className="hidden lg:flex h-2/4">
         <Lottie animationData={contactAnimation} loop={true} color="#000" />
       </div>
     </div>

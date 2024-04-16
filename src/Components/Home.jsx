@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { FaArrowDown } from "react-icons/fa6";
 import { Link } from 'react-scroll';
 import { Typewriter } from "react-simple-typewriter";
@@ -25,14 +25,8 @@ const Home = () => {
 
         </div>
         <div className="flex text-xl mt-5 gap-5 md:gap-8">
-          <div 
-          data-aos="fade-up"
-          data-aos-delay="200"
-          className="p-2 rounded-lg bg-secondary text-primary  lg:cursor-pointer"><Link to="contact" smooth duration={1000}>Contact</Link></div>
-          <div
-          data-aos="fade-up"
-          data-aos-delay="400"
-          className="p-2 rounded-lg bg-[#ffff] lg:cursor-pointer border"><Link to="project" smooth duration={1000}>Projects</Link></div>
+          <div className="p-2 rounded-lg bg-secondary text-primary  lg:cursor-pointer"><Link to="contact" smooth duration={1000}>Contact</Link></div>
+          <div className="p-2 rounded-lg bg-[#ffff] lg:cursor-pointer border"><Link to="project" smooth duration={1000}>Projects</Link></div>
         </div>
       </div>
       <div className="hidden md:flex mb-3 animate-bounce text-primary bg-secondary p-3 rounded-full "><FaArrowDown />

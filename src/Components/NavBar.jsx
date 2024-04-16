@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
-import { FaBarsStaggered } from "react-icons/fa6";
+import Aos from 'aos';
+import "aos/dist/aos.css";
+import React, { useEffect, useState } from 'react';
 import { FaTimes } from "react-icons/fa";
-import Aos from 'aos'
-import "aos/dist/aos.css"
-import { useEffect } from 'react';
+import { FaBarsStaggered } from "react-icons/fa6";
 import { Link } from 'react-scroll';
 
 const NavBar = () => {
@@ -16,30 +15,18 @@ const NavBar = () => {
     return (
         <header className="flex justify-between items-center fixed w-screen px-2 py-2 h-15 md:px-7 md:h-20 z-50 bg-primary">
             <h1
-                data-aos="fade-right"
-                data-aos-delay="30000"
                 className="text-5xl font-logo mt-3 md:mt-4">Vaibhav</h1>
 
             <ul className="hidden md:flex justify-center items-center gap-6">
                 <li
-                    data-aos="fade-down"
-                    data-aos-delay="200"
                     className="cursor-pointer p-3 rounded-3xl text-xl font-medium hover:font-semibold hover:scale-110 duration-300"><Link to='home' smooth duration={800}>Home</Link></li>
                 <li
-                    data-aos="fade-down"
-                    data-aos-delay="300"
                     className="cursor-pointer p-3 rounded-3xl text-xl font-medium hover:font-semibold hover:scale-110 duration-300"><Link to='about' smooth duration={800}>About</Link></li>
                 <li
-                    data-aos="fade-down"
-                    data-aos-delay="400"
                     className="cursor-pointer p-3 rounded-3xl text-xl font-medium hover:font-semibold hover:scale-110 duration-300"><Link to='project' smooth duration={800}>Project</Link></li>
                 <li
-                    data-aos="fade-down"
-                    data-aos-delay="500"
                     className="cursor-pointer p-3 rounded-3xl text-xl font-medium hover:font-semibold hover:scale-110 duration-300"><Link to='experience' smooth duration={800}>Experience</Link></li>
                 <li
-                    data-aos="fade-down"
-                    data-aos-delay="600"
                     className="cursor-pointer p-3 rounded-3xl text-xl font-medium hover:font-semibold hover:scale-110 duration-300"><Link to='contact' smooth duration={800}>Contact</Link></li>
             </ul>
 

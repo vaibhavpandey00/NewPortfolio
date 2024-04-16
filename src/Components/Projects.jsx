@@ -1,8 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
+import ProjectData from "../Assets/Project/ProjectData";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const Projects = () => {
+  // Initialize state to keep track of open/closed state for each project
+  const [projectTitleHeights, setProjectTitleHeights] = useState(Array(ProjectData.length).fill(false));
+
+  // Function to toggle the description for a specific project
+  const toggleDescription = (index) => {
+    const newHeights = [...projectTitleHeights];
+    newHeights[index] = !newHeights[index];
+    setProjectTitleHeights(newHeights);
+  };
+
   return (
-    <div name="project" className="flex flex-col items-start w-full h-screen pt-[4rem] bg-primary text-secondary  md:gap-10 md:flex-row md:justify-center md:items-center border">
+    <div name="project" className="flex flex-col items-start w-full h-screen pt-[4rem] bg-primary text-secondary  md:gap-10 md:flex-row md:justify-center md:items-center">
       <div className="md:hidden m-5">
         <h1 className="w-40 text-4xl font-bold border-b-2 pb-3 mb-4">Projects</h1>
         <p>Here are some of my work</p>
@@ -13,35 +35,64 @@ const Projects = () => {
         data-aos="fade-up"
         data-aos-delay="300"
         data-aos-anchor-placement="center-bottom"
-        className="flex p-1 rounded-xl gap-10 shadow-ternary md:shadow-2xl w-full h-[30rem] md:flex-row md:overflow-y-auto md:w-1/3 md:h-3/5">
+        className="flex rounded-xl gap-10 lg:shadow-ternary lg:shadow-2xl w-full h-[35rem] lg:flex-row lg:overflow-y-auto lg:w-[40%] lg:h-[50%]">
 
-        <div className="hidden w-full h-full flex-shrink-0 p-2  md:p-0 md:flex items-center justify-center ">
-          <div className="grid grid-flow-row-4 md:grid-cols-2 md:grid-rows-2 gap-3 md:gap-7">
-            <div className="border flex justify-center items-center h-44 md:w-64 md:h-48 rounded-md md:hover:shadow-ternary shadow-xl duration-300">1</div>
-            <div className="border flex justify-center items-center h-44 md:w-64 md:h-48 rounded-md md:hover:shadow-ternary shadow-xl duration-300">2</div>
-            <div className="border flex justify-center items-center h-44 md:w-64 md:h-48 rounded-md md:hover:shadow-ternary shadow-xl duration-300">3</div>
-            <div className="border flex justify-center items-center h-44 md:w-64 md:h-48 rounded-md md:hover:shadow-ternary shadow-xl duration-300">4</div>
-          </div>
+        {/* project section pc */}
+
+        <div className="hidden lg:flex lg:w-full lg:h-full" >
+          <Swiper
+            spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            // navigation={true}
+            modules={[Autoplay, Pagination, Navigation]}
+            className="mySwiper"
+          >
+            {
+              ProjectData.map((project, index) => (
+                <SwiperSlide key={index} className="hidden relative lg:flex w-full h-full bg-secondary p-3" >
+                  <img className="rounded-xl w-full h-full cursor-pointer " src={project.image} alt="image" />
+                  <div className="absolute bottom-0 left-0 pb-7 w-full flex justify-center items-center duration-300 border-t-2 bg-[#fff] text-[#000] font-bold text-xl" > {project.name} </div>
+                </SwiperSlide>
+              ))
+            }
+          </Swiper>
         </div>
 
-        <div className="hidden w-full h-full flex-shrink-0 p-2 md:p-0 md:flex items-center justify-center">
-          <div className="grid grid-flow-row-4 md:grid-cols-2 md:grid-rows-2 gap-3 md:gap-7">
-            <div className="border flex justify-center items-center h-44 md:w-64 md:h-48 rounded-md md:hover:shadow-ternary shadow-xl duration-300">5</div>
-            <div className="border flex justify-center items-center h-44 md:w-64 md:h-48 rounded-md md:hover:shadow-ternary shadow-xl duration-300">6</div>
-            <div className="border flex justify-center items-center h-44 md:w-64 md:h-48 rounded-md md:hover:shadow-ternary shadow-xl duration-300">7</div>
-            <div className="border flex justify-center items-center h-44 md:w-64 md:h-48 rounded-md md:hover:shadow-ternary shadow-xl duration-300">8</div>
-          </div>
-        </div>
 
+        {/* projects section mobile */}
         <div className="flex-col w-full h-auto overflow-auto p-3 scrollBarHidden md:hidden">
-          <div className="w-full h-[12rem] mt-2 rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] border">1</div>
-          <div className="w-full h-[12rem] mt-2 rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] border">2</div>
-          <div className="w-full h-[12rem] mt-2 rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] border">3</div>
-          <div className="w-full h-[12rem] mt-2 rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] border">4</div>
-          <div className="w-full h-[12rem] mt-2 rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] border">5</div>
-          <div className="w-full h-[12rem] mt-2 rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] border">6</div>
-          <div className="w-full h-[12rem] mt-2 rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] border">7</div>
-          <div className="w-full h-[12rem] mt-2 rounded-xl shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] border">8</div>
+          {ProjectData.map((project, index) => (
+            <div key={index} className="w-full h-[12rem] relative mt-3 shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]">
+              <img className="rounded-xl" src={project.image} alt="image" />
+
+              <div className="absolute bottom-0 left-0 w-full flex justify-center items-center duration-300 bg-[#fff] text-[#000]" style={{
+                height: projectTitleHeights[index] ? "12rem" : "4rem",
+                borderTopLeftRadius: projectTitleHeights[index] ? "0.75rem" : "12px",
+                borderTopRightRadius: projectTitleHeights[index] ? "0.75rem" : "12px"
+              }} >
+                <div className="overflow-hidden flex flex-col items-center gap-4 p-3 h-full w-full">
+                  <div className="font-semibold border-b-2" onClick={() => toggleDescription(index)}>
+                    {project.name}
+                  </div>
+                  <div className="w-full h-24 justify-center items-center" style={{ display: projectTitleHeights[index] ? "flex" : "none" }}>
+                    {project.description.slice(0, 100)}
+                  </div>
+                  <div className="justify-between w-2/3" style={{ display: projectTitleHeights[index] ? "flex" : "none" }}>
+                    <div className="py-1 px-3 rounded-xl bg-secondary text-primary border">Live</div>
+                    <div className="py-1 px-3 rounded-xl bg-secondary text-primary border">GitHub</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -57,4 +108,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Projects;

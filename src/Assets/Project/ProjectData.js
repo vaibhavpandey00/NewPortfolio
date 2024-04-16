@@ -1,52 +1,59 @@
-
+import portfolio from "../Images/portfolio.png";
+import chatme from "../Images/chatme.png";
+import ecom from "../Images/ecom.png";
+import estate from "../Images/estate.png";
+import news from "../Images/news.png";
+import weather from "../Images/weather.png";
+import dictinory from "../Images/dictinory.png";
+import calculator from "../Images/calculator.png";
 
 const projectData = [
     {
-        name: "Project",
-        description: "This is a project",
-        image: "",
+        name: "Portfolio",
+        description: "This is a project for portfolio sdvvdv sdsdvsdvsvd sdvsvdv sdvsvsdvsd sdvsdsdvsd sdvsdvsdsvsddsv sdvsddvdvs sdvsdvsdv",
+        image: portfolio,
         link: ""
     },
     {
-        name: "Project",
+        name: "MERN Chat App",
         description: "This is a project",
-        image: "",
+        image: chatme,
         link: ""
     },
     {
-        name: "Project",
+        name: "E-Commerce",
         description: "This is a project",
-        image: "",
+        image: ecom,
         link: ""
     },
     {
-        name: "Project",
+        name: "Estate Sphere",
         description: "This is a project",
-        image: "",
+        image: estate,
         link: ""
     },
     {
-        name: "Project",
+        name: "News Geek",
         description: "This is a project",
-        image: "",
+        image: news,
         link: ""
     },
     {
-        name: "Project",
+        name: "Weather App",
         description: "This is a project",
-        image: "",
+        image: weather,
         link: ""
     },
     {
-        name: "Project",
+        name: "Quick Find",
         description: "This is a project",
-        image: "",
+        image: dictinory,
         link: ""
     },
     {
-        name: "Project",
+        name: "Calculator",
         description: "This is a project",
-        image: "",
+        image: calculator,
         link: ""
     },
 ]
