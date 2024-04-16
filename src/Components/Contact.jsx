@@ -64,7 +64,8 @@ const Contact = () => {
 
       {/* SVG section */}
       <div
-      data-aos="fade" 
+      data-aos="fade"
+      data-aos-delay="400"
       className="hidden lg:flex h-2/4">
         <Lottie animationData={contactAnimation} loop={true} color="#000" />
       </div>
