@@ -1,5 +1,6 @@
 import React from 'react'
 import { IoDocumentText } from "react-icons/io5";
+import VaibhavPandeyResume from "../Assets/VaibhavPandeyResume.pdf";
 
 const About = () => {
   return (
@@ -34,14 +35,21 @@ const About = () => {
           my knowledge and immerse
           myself in real-world projects.
         </p>
-        <div
-          data-aos="fade-up"
-          className="p-2 md:flex md:justify-center md:items-center rounded-lg cursor-pointer bg-[#ffff] text-[#06223F] font-bold text-xl hidden border">Resumee <IoDocumentText /></div>
+        <a href={VaibhavPandeyResume} download>
+          <div
+            data-aos="fade-up"
+            className="p-2 md:flex md:justify-center md:items-center rounded-lg cursor-pointer bg-[#ffff] text-[#06223F] font-bold text-xl hidden border">Resumee <IoDocumentText />
+          </div>
+        </a>
+
       </div>
       <div className="w-full flex justify-center mb-10 md:hidden">
-        <div
-          data-aos="fade-up"
-          className="p-2 flex justify-center items-center rounded-lg bg-[#ffff] text-[#06223F] font-bold text-xl border">Resumee <IoDocumentText /></div>
+        <a href={VaibhavPandeyResume} download>
+          <div
+            data-aos="fade-up"
+            className="p-2 flex justify-center items-center rounded-lg bg-[#ffff] text-[#06223F] font-bold text-xl border">Resumee <IoDocumentText />
+          </div>
+        </a>
       </div>
     </div>
   )
