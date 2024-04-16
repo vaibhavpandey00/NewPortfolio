@@ -25,6 +25,7 @@ const NavBar = () => {
                 <li
                     className="cursor-pointer p-3 rounded-3xl text-xl font-medium hover:font-semibold hover:scale-110 duration-300"><Link to='project' smooth duration={800}>Project</Link></li>
                 <li
+
                     className="cursor-pointer p-3 rounded-3xl text-xl font-medium hover:font-semibold hover:scale-110 duration-300"><Link to='experience' smooth duration={800}>Experience</Link></li>
                 <li
                     className="cursor-pointer p-3 rounded-3xl text-xl font-medium hover:font-semibold hover:scale-110 duration-300"><Link to='contact' smooth duration={800}>Contact</Link></li>
