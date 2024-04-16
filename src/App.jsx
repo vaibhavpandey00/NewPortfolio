@@ -5,10 +5,12 @@ import Projects from "./Components/Projects";
 import Experience from "./Components/Experience";
 import Contact from "./Components/Contact";
 import ContactPhone from "./Components/ContactPhone";
+import Preloader from "./Components/Preloader";
 
 function App() {
   return (
-    <div>
+    <>
+      <Preloader />
       <NavBar />
       <Home />
       <About />
@@ -16,7 +18,7 @@ function App() {
       <Experience />
       <Contact />
       <ContactPhone />
-    </div>
+    </>
   )
 }
 

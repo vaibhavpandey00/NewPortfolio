@@ -17,6 +17,7 @@ const NavBar = () => {
         <header className="flex justify-between items-center fixed w-screen px-2 py-2 h-15 md:px-7 md:h-20 z-50 bg-primary">
             <h1
                 data-aos="fade-right"
+                data-aos-delay="30000"
                 className="text-5xl font-logo mt-3 md:mt-4">Vaibhav</h1>
 
             <ul className="hidden md:flex justify-center items-center gap-6">
