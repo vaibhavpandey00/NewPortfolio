@@ -11,6 +11,7 @@ const Projects = () => {
       {/* projects section */}
       <div
         data-aos="fade-up"
+        data-aos-delay="300"
         data-aos-anchor-placement="center-bottom"
         className="flex p-1 rounded-xl gap-10 shadow-ternary md:shadow-2xl w-full h-[30rem] md:flex-row md:overflow-y-auto md:w-1/3 md:h-3/5">
 
