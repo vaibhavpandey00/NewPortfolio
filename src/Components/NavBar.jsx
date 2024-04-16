@@ -32,10 +32,13 @@ const NavBar = () => {
             </ul>
 
             <div onClick={() => setNav(!nav)} className="cursor-pointer z-10 text-gray-500 md:hidden">
-                {nav ? <div className="z-[999] text-primary"><FaTimes size={"25"} /></div> : <div><FaBarsStaggered size={"25"} /></div>}
+                {nav ? <div className="z-[999] text-primary">< FaTimes size={"25"} /></div> : <div><FaBarsStaggered size={"25"} /></div>}
             </div>
             {nav && (
-                <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-secondary text-primary font-semibold">
+                <ul
+                    data-aos="slide-down"
+                    // data-aos-easing="ease-in-cubic"
+                    className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-secondary text-primary font-semibold">
                     <li className="px-4 cursor-pointer py-6 text-3xl"><Link onClick={() => setNav(!nav)} to='home' smooth duration={800}>Home</Link></li>
                     <li className="px-4 cursor-pointer py-6 text-3xl"><Link onClick={() => setNav(!nav)} to='about' smooth duration={800}>About</Link></li>
                     <li className="px-4 cursor-pointer py-6 text-3xl"><Link onClick={() => setNav(!nav)} to='project' smooth duration={800}>Project</Link></li>
