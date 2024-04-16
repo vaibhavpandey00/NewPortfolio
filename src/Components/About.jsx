@@ -13,11 +13,11 @@ const About = () => {
         </div>
       </div>
       <div className="hidden bg-primary rounded-md mr-16 h-96 w-1 md:flex"></div>
-      <div className="overflow-hidden h-[30rem] mb-9 flex justify-center items-center ml-5 mr-5 md:w-1/3 md:m-0 md:flex-col">
+      <div className="overflow-hidden h-[30rem] lg:w-[50rem] mb-9 flex justify-center items-center md:m-0 md:flex-col ">
 
         <p
           data-aos="fade-left"
-          className="text-lg lg:text-xl mb-0 md:mb-10">
+          className="text-lg lg:text-xl mb-0 p-5 lg:mb-10">
           I am an aspiring web developer
           with a strong foundation in web
           technologies and a keen desire to
@@ -34,10 +34,14 @@ const About = () => {
           my knowledge and immerse
           myself in real-world projects.
         </p>
-        <div className="p-2 md:flex md:justify-center md:items-center rounded-lg cursor-pointer bg-[#ffff] text-[#06223F] font-bold text-xl hidden border">Resumee <IoDocumentText /></div>
+        <div
+          data-aos="fade-up"
+          className="p-2 md:flex md:justify-center md:items-center rounded-lg cursor-pointer bg-[#ffff] text-[#06223F] font-bold text-xl hidden border">Resumee <IoDocumentText /></div>
       </div>
       <div className="w-full flex justify-center mb-10 md:hidden">
-        <div className="p-2 flex justify-center items-center rounded-lg bg-[#ffff] text-[#06223F] font-bold text-xl border">Resumee <IoDocumentText /></div>
+        <div
+          data-aos="fade-up"
+          className="p-2 flex justify-center items-center rounded-lg bg-[#ffff] text-[#06223F] font-bold text-xl border">Resumee <IoDocumentText /></div>
       </div>
     </div>
   )
