@@ -1,14 +1,45 @@
-import React from 'react'
+import { motion } from "framer-motion";
+import React from 'react';
 import { IoDocumentText } from "react-icons/io5";
 import VaibhavPandeyResume from "../Assets/VaibhavPandeyResume.pdf";
+import SplitString from "./SplitString";
 
 const About = () => {
+  const Hello = SplitString("Hello");
+
+  const characterVariants = {
+    hidden: {
+      opacity: 0
+    },
+    reveal: {
+      opacity: 1
+    }
+  }
+
   return (
     <div name="about" className="flex flex-col w-full h-screen items-start pt-[4rem] bg-secondary text-primary md:pt-0  md:flex-row md:justify-center md:items-center md:gap-5">
       <div className="flex flex-col gap-4 m-5 md:w-3/12">
-        <div className="font-logo text-2xl md:w-1/3 md:text-3xl">
-          Hello
-        </div>
+        {/* <div className="font-logo text-2xl md:w-1/3 md:text-3xl">Hello</div> */}
+        <motion.h1
+          initial="hidden"
+          whileInView={"reveal"}
+          viewport={{ once: true }}
+          transition={{ staggerChildren: 0.2 }}
+        >
+          {
+            Hello.map((char, index) => {
+              return <motion.span
+                key={index}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                variants={characterVariants}
+                className="font-logo text-2xl md:w-1/3 md:text-3xl"
+              >
+                {char}
+              </motion.span>
+            })
+          }
+        </motion.h1>
+
         <div className="flex text-4xl font-bold md:w-1/2">
           About Me
         </div>
