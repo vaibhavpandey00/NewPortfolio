@@ -78,16 +78,20 @@ const Projects = () => {
                 borderTopLeftRadius: projectTitleHeights[index] ? "0.75rem" : "12px",
                 borderTopRightRadius: projectTitleHeights[index] ? "0.75rem" : "12px"
               }} >
-                <div className="overflow-hidden flex flex-col items-center gap-4 p-3 h-full w-full">
+                <div className="overflow-hidden flex flex-col items-center gap-3 p-3 h-full w-full">
                   <div className="font-semibold border-b-2" onClick={() => toggleDescription(index)}>
                     {project.name}
                   </div>
-                  <div className="w-full h-24 justify-center items-center" style={{ display: projectTitleHeights[index] ? "flex" : "none" }}>
-                    {project.description.slice(0, 100)}
+                  <div className="w-full h-24 justify-center items-center " style={{ display: projectTitleHeights[index] ? "flex" : "none" }}>
+                    {project.description.slice(0, 160)}
                   </div>
-                  <div className="justify-between w-2/3" style={{ display: projectTitleHeights[index] ? "flex" : "none" }}>
-                    <div className="py-1 px-3 rounded-xl bg-secondary text-primary border">Live</div>
-                    <div className="py-1 px-3 rounded-xl bg-secondary text-primary border">GitHub</div>
+                  <div className="justify-between w-2/3 " style={{ display: projectTitleHeights[index] ? "flex" : "none" }}>
+                    <div className="py-1 px-3 rounded-xl bg-secondary text-primary ">
+                      <a href={project.liveLink} target="_blank">Live</a>
+                    </div>
+                    <div className="py-1 px-3 rounded-xl bg-secondary text-primary ">
+                      <a href={project.ghLink} target="_blank">GitHub</a>
+                    </div>
                   </div>
                 </div>
               </div>

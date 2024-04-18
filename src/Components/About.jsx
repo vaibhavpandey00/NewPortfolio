@@ -69,7 +69,7 @@ const About = () => {
         <a href={VaibhavPandeyResume} download>
           <div
             data-aos="fade-up"
-            className="p-2 md:flex md:justify-center md:items-center rounded-lg cursor-pointer bg-[#ffff] text-[#06223F] font-bold text-xl hidden border">Resumee <IoDocumentText />
+            className="p-2 md:flex md:justify-center md:items-center rounded-lg cursor-pointer bg-[#ffff] text-[#06223F] font-bold text-xl hidden border">Resume <IoDocumentText />
           </div>
         </a>
 
@@ -78,7 +78,7 @@ const About = () => {
         <a href={VaibhavPandeyResume} download>
           <div
             data-aos="fade-up"
-            className="p-2 flex justify-center items-center rounded-lg bg-[#ffff] text-[#06223F] font-bold text-xl border">Resumee <IoDocumentText />
+            className="p-2 flex justify-center items-center rounded-lg bg-[#ffff] text-[#06223F] font-bold text-xl border">Resume <IoDocumentText />
           </div>
         </a>
       </div>
