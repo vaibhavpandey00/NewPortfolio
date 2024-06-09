@@ -23,7 +23,7 @@ const ContactPhone = () => {
                     </div>
                 </div>
                 <div className="flex gap-4 justify-center items-center h-14 lg:h-0 w-full">
-                    <p className="text-[11px] text-[#a8a8a8]">copyright &copy; 2024 Vaibhav All Rights Reserved</p>
+                    <p className="text-[11px] text-[#a8a8a8]">Copyright &copy; 2024 Vaibhav All Rights Reserved</p>
                 </div>
             </div>
         </div>
