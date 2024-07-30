@@ -54,8 +54,8 @@ const About = () => {
           with a strong foundation in web
           technologies and a keen desire to
           learn and grow. My journey at
-          [Indore Institute of Science and
-          Technology (IIST) College] has
+          Indore Institute of Science and
+          Technology (IIST) College has
           equipped me with a solid
           understanding of web
           development principles and

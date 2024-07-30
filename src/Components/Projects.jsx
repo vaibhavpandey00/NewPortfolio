@@ -14,12 +14,12 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const Projects = () => {
   // Initialize state to keep track of open/closed state for each project
-  const [projectTitleHeights, setProjectTitleHeights] = useState(Array(ProjectData.length).fill(false));
+  const [ projectTitleHeights, setProjectTitleHeights ] = useState(Array(ProjectData.length).fill(false));
 
   // Function to toggle the description for a specific project
   const toggleDescription = (index) => {
-    const newHeights = [...projectTitleHeights];
-    newHeights[index] = !newHeights[index];
+    const newHeights = [ ...projectTitleHeights ];
+    newHeights[ index ] = !newHeights[ index ];
     setProjectTitleHeights(newHeights);
   };
 
@@ -52,14 +52,17 @@ const Projects = () => {
               clickable: true,
             }}
             // navigation={true}
-            modules={[Autoplay, Pagination, Navigation]}
+            modules={[ Autoplay, Pagination, Navigation ]}
             className="mySwiper"
           >
             {
               ProjectData.map((project, index) => (
                 <SwiperSlide key={index} className="hidden relative lg:flex w-full h-full bg-secondary p-3" >
-                  <img className="rounded-xl w-full h-full cursor-pointer " src={project.image} alt="image" />
-                  <div className="absolute bottom-0 left-0 pb-7 w-full flex justify-center items-center duration-300 border-t-2 bg-[#fff] text-[#000] font-bold text-xl" > {project.name} </div>
+                  <img className="rounded-xl w-full h-full cursor-pointer" src={project.image} alt="image" />
+                  <a href={project.ghLink} target="_blank" rel="noopener noreferrer">
+                    <div className="absolute bottom-0 left-0 pb-7 w-full flex justify-center items-center duration-300 border-t-2 bg-[#fff] text-[#000] font-bold text-xl" > {project.name} </div>
+                  </a>
+
                 </SwiperSlide>
               ))
             }
@@ -74,18 +77,18 @@ const Projects = () => {
               <img className="rounded-xl" src={project.image} alt="image" />
 
               <div className="absolute bottom-0 left-0 w-full flex justify-center items-center duration-300 bg-[#fff] text-[#000]" style={{
-                height: projectTitleHeights[index] ? "12rem" : "4rem",
-                borderTopLeftRadius: projectTitleHeights[index] ? "0.75rem" : "12px",
-                borderTopRightRadius: projectTitleHeights[index] ? "0.75rem" : "12px"
+                height: projectTitleHeights[ index ] ? "12rem" : "4rem",
+                borderTopLeftRadius: projectTitleHeights[ index ] ? "0.75rem" : "12px",
+                borderTopRightRadius: projectTitleHeights[ index ] ? "0.75rem" : "12px"
               }} >
                 <div className="overflow-hidden flex flex-col items-center gap-3 p-3 h-full w-full">
                   <div className="font-semibold border-b-2" onClick={() => toggleDescription(index)}>
                     {project.name}
                   </div>
-                  <div className="w-full h-24 justify-center items-center " style={{ display: projectTitleHeights[index] ? "flex" : "none" }}>
+                  <div className="w-full h-24 justify-center items-center " style={{ display: projectTitleHeights[ index ] ? "flex" : "none" }}>
                     {project.description.slice(0, 160)}
                   </div>
-                  <div className="justify-between w-2/3 " style={{ display: projectTitleHeights[index] ? "flex" : "none" }}>
+                  <div className="justify-between w-2/3 " style={{ display: projectTitleHeights[ index ] ? "flex" : "none" }}>
                     <div className="py-1 px-3 rounded-xl bg-secondary text-primary ">
                       <a href={project.liveLink} target="_blank">Live</a>
                     </div>
