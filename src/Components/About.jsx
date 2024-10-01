@@ -49,22 +49,12 @@ const About = () => {
 
         <p
           data-aos="fade-left"
-          className="text-lg lg:text-xl mb-0 p-5 lg:mb-10">
-          I am an aspiring web developer
-          with a strong foundation in web
-          technologies and a keen desire to
-          learn and grow. My journey at
-          Indore Institute of Science and
-          Technology (IIST) College has
-          equipped me with a solid
-          understanding of web
-          development principles and
-          ignited a passion for crafting
-          dynamic digital solutions. Driven by
-          curiosity and a commitment to
-          excellence, I am eager to apply
-          my knowledge and immerse
-          myself in real-world projects.
+          className="text-sm lg:text-lg mb-0 p-3 lg:mb-10">
+          I am an aspiring Software Developer with a passion for building efficient, scalable web applications. With experience in full-stack development and proficiency in JavaScript, Node.js, and the MERN stack, I thrive on crafting innovative solutions that enhance user experience. Currently interning at Propero, I’ve had the opportunity to develop and optimize Shopify apps, troubleshoot critical issues, and work closely with databases to improve app scalability and performance.
+          <br />
+          Throughout my academic journey, I cultivated a solid foundation in web technologies, and my curiosity has driven me to pursue hands-on projects, including real-time chat applications and personal portfolio development. My certifications in AWS, SQL, and cybersecurity further strengthen my technical expertise.
+          <br />
+          I'm constantly seeking opportunities to grow within a talented engineering team and contribute to projects that challenge me to push the boundaries of what's possible in software development.
         </p>
         <a href={VaibhavPandeyResume} download>
           <div
