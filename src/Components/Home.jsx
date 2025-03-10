@@ -14,7 +14,7 @@ const Home = () => {
           <h1 className="mr-3">A</h1>
           <div className="bgStrokeText">
             <Typewriter
-              words={["Web Developer", "Student", "Freelancer", "Otaku"]}
+              words={[ "Web Developer", "Student", "Explorer", "Otaku" ]}
               cursor
               cursorStyle='_'
               typeSpeed={100}
